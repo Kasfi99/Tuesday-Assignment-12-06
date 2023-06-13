@@ -9,7 +9,7 @@ const { data: seasons } = await useFetch(
 </script>
 
 <template>
-    <div style="background-color: black; height: 100%; padding-top: 100px; padding: 50px">
+    <div style="background-color: black; height: 1000px; padding-top: 100px; padding: 50px">
 
         <div style="display: flex;">
             <NuxtLink to="/"

@@ -22,7 +22,7 @@ const { season } = defineProps(['season'])
         <div class="star">
             <star-rating style="color: orange;" :rating="season.rating.average" />
         </div>
-        <p style="color: white; margin-top: 25px; font-size: 20px;">Episode {{ season.number }}</p>
+        <p style="color: white; margin-top: 25px; font-size: 20px; z-index: 1">Episode {{ season.number }}</p>
     </div>
 </template>
 

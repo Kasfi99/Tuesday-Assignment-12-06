@@ -1,13 +1,11 @@
 <template>
     <div>
         <div v-for="starIndex in 5" :key="starIndex" class="star">
-            {{ console.log(starIndex, fullStarsCount, hasHalfStar, this.rating, '<<') }} <svg-icon
-                v-if="starIndex <= fullStarsCount" type="mdi" :path="path.fullStar"></svg-icon>
+            <svg-icon v-if="starIndex <= fullStarsCount" type="mdi" :path="path.fullStar"></svg-icon>
 
-                <svg-icon v-else-if="starIndex === fullStarsCount && hasHalfStar" type="mdi"
-                    :path="path.halfStar"></svg-icon>
+            <svg-icon v-else-if="starIndex === fullStarsCount && hasHalfStar" type="mdi" :path="path.halfStar"></svg-icon>
 
-                <svg-icon v-else type="mdi" :path="path.emptyStar"></svg-icon>
+            <svg-icon v-else type="mdi" :path="path.emptyStar"></svg-icon>
         </div>
     </div>
 </template>

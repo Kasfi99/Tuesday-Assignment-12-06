@@ -1,7 +1,7 @@
 <template>
-    <div style="position: relative;">
+    <div style="background-color: black; height: 2000px">
         <div style="position: absolute; top: 40px; left: 100px; z-index: 100;">
-            <NuxtLink to="/" style="display: flex; align-items: center;">
+            <NuxtLink to="/listEpisode/307" style="display: flex; align-items: center;">
                 <svg class="w-8 h-8" style="color: white;" aria-hidden="true" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
                     <path
@@ -20,7 +20,7 @@
 
 
 
-        <img :src="episode.image.original" class="image" style="width: 100%; height: 100%; object-fit: cover;">
+        <img :src="episode?.image.original" class="image" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 </template>
   
